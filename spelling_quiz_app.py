@@ -108,11 +108,11 @@ else:
     # Perfect score: display hamster pyramid
     if st.session_state.correct == total:
         st.markdown("🐹🐹🐹 Perfect score! 🎉")
-        a = [1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 3, 2, 1]
+        a = [1, 2, 3, 4, 3, 2, 1]
         pyramid_lines = []
         for i in a:
-            spaces = "&nbsp;" * 2 * (7 - i)
-            hamsters = "🐹&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" * i
+            spaces = "&nbsp;" * 2 * (4 - i)
+            hamsters = "🐹&nbsp;&nbsp;" * i
             pyramid_lines.append(spaces + hamsters)
         pyramid_html = "<br>".join(pyramid_lines)
         st.markdown(f"<div style='text-align:center; font-size:24px;'>{pyramid_html}</div>", unsafe_allow_html=True)
