@@ -112,7 +112,7 @@ else:
         pyramid_lines = []
         for i in a:
             spaces = "&nbsp;" * 2 * (4 - i)
-            hamsters = "🐹&nbsp;&nbsp;&nbsp;&nbsp;" * i
+            hamsters = "🐹&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" * i
             pyramid_lines.append(spaces + hamsters)
         pyramid_html = "<br>".join(pyramid_lines)
         st.markdown(f"<div style='text-align:center; font-size:24px;'>{pyramid_html}</div>", unsafe_allow_html=True)
