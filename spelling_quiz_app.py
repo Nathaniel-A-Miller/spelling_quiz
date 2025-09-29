@@ -13,7 +13,7 @@ st.title("🐹 Isaac Spelling Quiz")
 # --------------------------
 # Load Words from File
 # --------------------------
-file_path = "week_4.txt"
+file_path = "current_week.txt"
 if not Path(file_path).exists():
     st.error(f"❌ {file_path} not found. Please add your word list file in the same folder.")
     st.stop()
